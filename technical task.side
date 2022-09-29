@@ -1,0 +1,71 @@
+{
+  "id": "cdb8d3ae-cf55-4797-8118-8a6ceda202a1",
+  "version": "2.0",
+  "name": "technical task",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "962e243f-954f-472c-817a-870a11cd66a7",
+    "name": "run1",
+    "commands": [{
+      "id": "c890e8cb-520b-43c7-9265-12256e016cc2",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f69f18f-5909-4e59-9496-3bdbe21c1072",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a57e9f2-a443-435b-964f-29218b6d5d65",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Dresses')])[5]",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dresses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=8&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4edf3d-61a7-4899-9b58-5cbcc6aec171",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//img[@alt='Printed Dress'])[2]",
+      "targets": [
+        ["css=.ajax_block_product:nth-child(2) .icon-eye-open", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li[2]/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae347f34-b551-451e-aad5-67543cb65bee",
+      "comment": "",
+      "command": "click",
+      "target": "id=\"add_to_cart\"",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b0994b1-3a29-46b1-a2bd-e3af31f2d8c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["962e243f-954f-472c-817a-870a11cd66a7"]
+  }],
+  "urls": ["http://automationpractice.com/index.php"],
+  "plugins": []
+}
